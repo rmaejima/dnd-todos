@@ -13,6 +13,7 @@ module.exports = {
     'components/(.*)$',
     'utils',
     'types',
+    '^[./]',
   ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
