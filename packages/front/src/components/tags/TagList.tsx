@@ -1,5 +1,3 @@
-import { TagCard } from './TagCard';
-import { TagModalProvider } from './modal/TagModalProvider';
 import styled from 'styled-components';
 
 import React from 'react';
@@ -13,6 +11,9 @@ import { createTag, deleteTag, updateTag, useAllTags } from 'utils/apis/tag';
 import { colors } from 'utils/theme';
 
 import { TagCreateRequest, TagSummary, TagUpdateRequest } from 'types/tag';
+
+import { TagCard } from './TagCard';
+import { TagModalProvider } from './modal/TagModalProvider';
 
 export const TagList: React.VFC = () => {
   const { tags, isLoading, error, refetchAllTags } = useAllTags();

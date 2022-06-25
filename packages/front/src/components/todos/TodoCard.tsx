@@ -1,5 +1,3 @@
-import { TagTip } from '../tags/TagTip';
-import { TodoModalProvider } from './modal/TodoModalProvider';
 import styled from 'styled-components';
 
 import React, { useState } from 'react';
@@ -25,6 +23,9 @@ import { formatDateToString } from 'utils/date';
 import { colors } from 'utils/theme';
 
 import { Todo, TodoUpdateRequest } from 'types/todo';
+
+import { TagTip } from '../tags/TagTip';
+import { TodoModalProvider } from './modal/TodoModalProvider';
 
 const DEBOUNCE_TIME = 600; // ms
 

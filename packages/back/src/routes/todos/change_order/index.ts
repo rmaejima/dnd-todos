@@ -1,9 +1,9 @@
-import { FastifyPluginAsync } from 'fastify';
 import {
   TodoChangeOrderRequest,
   TodoChangeOrderRequestSchema,
 } from '../../../types/todo';
 import { prisma } from '../../../utils/prisma';
+import { FastifyPluginAsync } from 'fastify';
 
 const root: FastifyPluginAsync = async (fastify) => {
   // Change todo order API

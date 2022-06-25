@@ -1,5 +1,3 @@
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
-import { FastifyPluginAsync } from 'fastify';
 import {
   TodoPayload,
   TodoSchema,
@@ -8,6 +6,8 @@ import {
 } from '../../../types/todo';
 import { prisma } from '../../../utils/prisma';
 import { serializeDateProps } from '../../../utils/serializeDate';
+import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
+import { FastifyPluginAsync } from 'fastify';
 
 type BaseParamsDictionary = {
   todoId: number;

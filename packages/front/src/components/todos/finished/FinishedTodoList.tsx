@@ -1,9 +1,10 @@
-import { TodoCard } from '../TodoCard';
 import styled from 'styled-components';
 
 import React from 'react';
 
 import { useAllTodos } from 'utils/apis/todo';
+
+import { TodoCard } from '../TodoCard';
 
 export const FinishedTodoList: React.VFC = () => {
   const { todos, isLoading, error, refetchAllTodos } = useAllTodos({

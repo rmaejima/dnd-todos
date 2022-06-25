@@ -1,4 +1,3 @@
-import { FastifyPluginAsync } from 'fastify';
 import {
   TodoArchiveRequest,
   TodoArchiveRequestSchema,
@@ -11,6 +10,7 @@ import {
   decrementAllOrderLargerThanCursor,
   getTodoMaxOrder,
 } from '../../../utils/todo';
+import { FastifyPluginAsync } from 'fastify';
 
 const root: FastifyPluginAsync = async (fastify) => {
   // Archive todo API

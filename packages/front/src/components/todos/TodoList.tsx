@@ -1,4 +1,3 @@
-import { TodoModalProvider } from './modal/TodoModalProvider';
 import styled from 'styled-components';
 
 import React, { useEffect, useMemo, useState } from 'react';
@@ -19,6 +18,8 @@ import { changeTodoOrder, createTodo, useAllTodos } from 'utils/apis/todo';
 import { colors } from 'utils/theme';
 
 import { Todo, TodoChangeOrderRequest, TodoCreateRequest } from 'types/todo';
+
+import { TodoModalProvider } from './modal/TodoModalProvider';
 
 const DEBOUNCE_TIME = 300; // ms
 

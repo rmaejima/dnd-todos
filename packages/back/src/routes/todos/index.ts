@@ -1,14 +1,14 @@
-import { FastifyPluginAsync } from 'fastify';
-import { prisma } from '../../utils/prisma';
 import {
   TodoCreateRequest,
   TodoCreateRequestSchema,
   TodoPayload,
   TodoSchema,
 } from '../../types/todo';
+import { prisma } from '../../utils/prisma';
 import { serializeDateProps } from '../../utils/serializeDate';
-import { Static, Type } from '@sinclair/typebox';
 import { getTodoMaxOrder } from '../../utils/todo';
+import { Static, Type } from '@sinclair/typebox';
+import { FastifyPluginAsync } from 'fastify';
 
 const TodoGetQuerySchema = Type.Object({
   finished: Type.ReadonlyOptional(Type.Boolean()),

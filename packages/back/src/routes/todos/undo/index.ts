@@ -1,4 +1,3 @@
-import { FastifyPluginAsync } from 'fastify';
 import {
   TodoPayload,
   TodoSchema,
@@ -7,6 +6,7 @@ import {
 } from '../../../types/todo';
 import { prisma } from '../../../utils/prisma';
 import { serializeDateProps } from '../../../utils/serializeDate';
+import { FastifyPluginAsync } from 'fastify';
 
 const root: FastifyPluginAsync = async (fastify) => {
   // Undo todo API
