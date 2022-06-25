@@ -1,0 +1,13 @@
+/* environment files */
+.env*
+!.env*.tmp
+!.env
+
+node_modules
+
+yarn-debug.log*
+yarn-error.log*
+
+tsconfig.tsbuildinfo
+
+dist
