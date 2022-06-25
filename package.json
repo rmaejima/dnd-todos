@@ -1,0 +1,21 @@
+{
+  "name": "dnd-todos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "front": "yarn workspace front start",
+    "back": "yarn workspace back dev"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "yarn": "^1.22.19",
+    "prisma": "^3.11.0",
+    "@prisma/client": "^3.11.0"
+  }
+}

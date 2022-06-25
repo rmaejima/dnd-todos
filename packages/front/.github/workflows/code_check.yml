@@ -1,0 +1,11 @@
+name: code_check
+on: [push]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.1.0
+      - run: yarn
+      - run: yarn type-check
+      - run: yarn format:check

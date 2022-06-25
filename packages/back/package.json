@@ -1,0 +1,43 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "fastify start -l info -a 0.0.0.0 dist/app.js",
+    "dev": "tsc && concurrently -k -p \"[{name}]\" -n \"TypeScript,App\" -c \"yellow.bold,cyan.bold\" \"tsc -w\" \"fastify start --ignore-watch=.ts$ -w -l info -P dist/app.js\"",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts src/",
+    "format:check": "prettier --check './**/*.{ts,tsx}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sinclair/typebox": "^0.23.4",
+    "@types/node": "^17.0.23",
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.13.0",
+    "fastify-cli": "^2.15.0",
+    "fastify-cors": "^6.0.3",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.1.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "concurrently": "^7.1.0",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.2",
+    "tap": "^15.1.6",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  }
+}
