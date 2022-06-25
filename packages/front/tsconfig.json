@@ -1,8 +1,12 @@
 {
+  "extends": "../../tsconfig.package.json",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": "./src",
+    "paths": {
+      "@shared/*": ["../shared"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,5 +22,10 @@
     "jsx": "react-jsx",
     "typeRoots": ["types", "node_modules/@types"]
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../shared"
+    }
+  ]
 }
