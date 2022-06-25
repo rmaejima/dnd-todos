@@ -35,11 +35,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "type-check": "tsc --noEmit",
-    "format": "prettier --write .",
-    "lint": "eslint --ext .jsx,.js,.tsx,.ts src/",
-    "format:check": "prettier --check './**/*.{ts,tsx}'"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

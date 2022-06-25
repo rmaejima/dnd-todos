@@ -6,7 +6,11 @@
   "private": true,
   "scripts": {
     "front": "yarn workspace front start",
-    "back": "yarn workspace back dev"
+    "back": "yarn workspace back dev",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts src/",
+    "format:check": "prettier --check './**/*.{ts,tsx}'"
   },
   "workspaces": {
     "packages": [
