@@ -1,13 +1,15 @@
+import { Tag } from '@prisma/client';
+import { Type } from '@sinclair/typebox';
+import { FastifyPluginAsync } from 'fastify';
+
+import { prisma } from '../../utils/prisma';
+
 import {
   TagCreateRequest,
   TagCreateRequestSchema,
   TagPayload,
   TagSchema,
 } from '../../types/tag';
-import { prisma } from '../../utils/prisma';
-import { Tag } from '@prisma/client';
-import { Type } from '@sinclair/typebox';
-import { FastifyPluginAsync } from 'fastify';
 
 const root: FastifyPluginAsync = async (fastify) => {
   // Get all tags API

@@ -1,16 +1,18 @@
-import {
-  TodoArchiveRequest,
-  TodoArchiveRequestSchema,
-  TodoPayload,
-  TodoSchema,
-} from '../../../types/todo';
+import { FastifyPluginAsync } from 'fastify';
+
 import { prisma } from '../../../utils/prisma';
 import { serializeDateProps } from '../../../utils/serializeDate';
 import {
   decrementAllOrderLargerThanCursor,
   getTodoMaxOrder,
 } from '../../../utils/todo';
-import { FastifyPluginAsync } from 'fastify';
+
+import {
+  TodoArchiveRequest,
+  TodoArchiveRequestSchema,
+  TodoPayload,
+  TodoSchema,
+} from '../../../types/todo';
 
 const root: FastifyPluginAsync = async (fastify) => {
   // Archive todo API

@@ -1,6 +1,8 @@
-import { nullable } from '../utils/typebox';
-import { TagSchema } from './tag';
 import { Static, Type } from '@sinclair/typebox';
+
+import { nullable } from '../utils/typebox';
+
+import { TagSchema } from './tag';
 
 export const TodoSchema = Type.Object({
   id: Type.Number(),

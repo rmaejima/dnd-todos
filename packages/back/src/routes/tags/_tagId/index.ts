@@ -1,12 +1,14 @@
+import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
+import { FastifyPluginAsync } from 'fastify';
+
+import { prisma } from '../../../utils/prisma';
+
 import {
   TagPayload,
   TagSchema,
   TagUpdateRequest,
   TagUpdateRequestSchema,
 } from '../../../types/tag';
-import { prisma } from '../../../utils/prisma';
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
-import { FastifyPluginAsync } from 'fastify';
 
 type BaseParamsDictionary = {
   tagId: number;
