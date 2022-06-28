@@ -1,16 +1,5 @@
 {
-  "compilerOptions": {
-    "sourceMap": true,
-    "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": false,
-    "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
-  },
+  "extends": "./tsconfig.package.json",
   "exclude": ["packages/**/*.test.ts", "packages/**/dist/**"],
   "references": [
     {
