@@ -2,8 +2,9 @@
 
 ## 実行環境
 
-- Node.js: v16.8.0
+- Node.js: v17.0.0
 - React.js(TypeScript)
+- Fastify, Prisma
 
 ## 実行手順
 
