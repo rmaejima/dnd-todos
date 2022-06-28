@@ -18,10 +18,11 @@ cp packages/front/.env.example packages/front/.env
 cp packages/back/.env.example packages/back/.env
 ```
 
-2. postgresQL の Docker コンテナを立ち上げます。
+2. postgresQL の Docker コンテナを立ち上げ、マイグレートします。
 
 ```
 docker-compose up -d
+npx prisma migrate dev
 ```
 
 3. パッケージをインストールします。
