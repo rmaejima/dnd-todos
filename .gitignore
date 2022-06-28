@@ -1,6 +1,4 @@
 /* environment files */
-.env*
-!.env*.tmp
 !.env
 
 node_modules

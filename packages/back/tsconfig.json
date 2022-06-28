@@ -10,13 +10,5 @@
     "skipLibCheck": true,
     "sourceMap": true
   },
-  "include": ["**/*.ts"],
-  "paths": {
-    "@shared/*": ["../shared"]
-  },
-  "references": [
-    {
-      "path": "../shared"
-    }
-  ]
+  "include": ["**/*.ts"]
 }
