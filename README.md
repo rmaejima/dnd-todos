@@ -1,30 +1,40 @@
-# Dnd Todos Front
+# Dnd Todos
+
+モノリポに変更しました。
 
 ## 実行環境
 
-- Node.js: v16.8.0
+- Node.js: v17.0.0
 - React.js(TypeScript)
+- Fastify, Prisma, PostgresQL, Docker
 
 ## 実行手順
 
-※dnd-todos-back のサーバーをあらかじめ起動してください。
-
-1. 環境変数を設定します。
+1. 各環境変数を設定します。
 
 ```
 cp .env.example .env
+cp packages/front/.env.example packages/front/.env
+cp packages/back/.env.example packages/back/.env
 ```
 
-2. パッケージをインストールします。
+2. postgresQL の Docker コンテナを立ち上げます。
+
+```
+docker-compose up -d
+```
+
+3. パッケージをインストールします。
 
 ```
 yarn
 ```
 
-3. 起動します。
+4. 各アプリを起動します。
 
 ```
-yarn start
+yarn front
+yarn back
 ```
 
 ## アプリ説明
